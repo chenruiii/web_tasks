@@ -1,0 +1,98 @@
+.container{
+	background:pink ;
+}
+.content{
+	margin:40px;
+	background:white;
+}
+#title-img{
+	text-align: center;
+	margin-top: 10px;
+	background: none;
+	width: 100px;
+	height: 100px;
+}
+
+#title-login{
+	text-align: center;
+	font-family: "微软雅黑"
+}
+.item{
+	width:400px;
+    margin:30px auto;
+    position: relative;
+}
+.item label{
+	font-size: 16px;
+    position: absolute;
+    left:2px;
+	bottom:0px;
+	font-family: "微软雅黑";
+	color:#777;
+	cursor: text;
+}
+.item input{
+	padding-top: 0px;
+    width:400px;
+    height: 30px;
+    font-size: 20px;
+	border:none;
+	outline: none;
+    border-bottom: 1px solid #c3c3c3;
+    position: relative;
+}
+#icon-right{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background:pink;
+	float: right;
+	position: relative;
+	box-shadow: -3px -3px 3px #888888;
+}
+.icon{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+}
+.bottom-line{
+    position: relative;
+    width: 0;
+    height: 2px;
+    left:0;
+    bottom: 0px;
+    background-color: red;
+}
+#forget{
+	color: pink;
+	width: 30px;
+	height: 40px;
+}
+.checkbox-inline{
+	width: 100px;
+	height: 40px;
+}
+ input[type='checkbox']+label::before {
+              content:'\a0';/*不换行空格*/
+              display: inline-block;
+              vertical-align: 0.2em;
+              width:0.8em;
+              height:0.8em;
+              margin-right: .2em;
+              border-radius:.2em;
+              background: pink;/*复选框的背景色*/
+              text-indent:0.15em;
+              line-height: 0.65;
+            }
+input[type='checkbox'] {
+  /*隐藏掉原先实际的 checkbox 框，之所以没用 display:none; 这种简单直接的方式，是因为这种方法会把它从键盘 tab 键切换焦点的队列中完全删除*/
+  position: absolute;
+  clip:rect(0,0,0,0);
+}
+input[type='checkbox']:checked+label::before {
+  content:'\2713'; /*对号的 Unicode字符*/
+  background: pink/*对号的颜色*/
+}
+
+	

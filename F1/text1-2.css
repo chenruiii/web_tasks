@@ -1,0 +1,24 @@
+*{
+	text-align: center;
+	color: lightpink;
+	font-family: "微软雅黑";
+}
+.content{
+	margin: 10px;
+}
+input{
+	border-radius: 20%;
+	background: white;
+	outline: none;
+}
+button{
+	border-radius: 20%;
+	background: white;
+	outline: none;	
+}
+.put{
+	border:none;
+	outline: none;
+    border-bottom: 1px solid #c3c3c3;
+    border-radius: 0;
+}
